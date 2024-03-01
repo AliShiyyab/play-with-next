@@ -1,0 +1,17 @@
+﻿@media (max-width: 768px) {
+    .hidden {
+        display: none;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    
+    .accordion-header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .accordion-content {
+        padding: 1rem;
+    }
+}
