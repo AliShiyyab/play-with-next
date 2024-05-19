@@ -7,7 +7,7 @@ import {TimeLine} from "@/components/home/time-line";
 
 const Home = ({params} : {params: {lang: string}}) => {
     return (
-        <div className={'flex flex-col gap-8 md:gap-16 lg:gap-24 w--full p-0 m-0 bg-gray-100'} style={{color: "#720505", fontWeight: "600"}}>
+        <div className={'flex flex-col gap-8 md:gap-16 lg:gap-24 p-0 m-0 bg-gray-100'} style={{color: "#720505", fontWeight: "600"}}>
             <Introduction />
             <SearchEngine />
             <TheFourChairs />
