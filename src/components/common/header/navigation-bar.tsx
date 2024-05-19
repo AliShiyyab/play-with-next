@@ -68,7 +68,7 @@ export const NavigationBar = ({ lang, locales }: NavigationBarProps) => {
                     </svg>
                 </button>
                 {isMenuOpen && (
-                    <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl z-20">
+                    <div className="absolute end-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl z-20">
                         {[`/`, '/Book', '/Podcast', '/Calligraphy', '/Tafsir', '/About-Prince-Ghazi'].map((path) => (
                             <Link
                                 key={path}
