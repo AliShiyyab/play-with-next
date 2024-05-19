@@ -2,7 +2,7 @@
 //  we should call an api to return the introduction data
 export const Introduction = () => {
     return (
-        <div className="bg-white p-5 md:pt-12 md:px-28 lg:pt-16 lg:px-44">
+        <div className="p-5 md:pt-12 md:px-28 lg:pt-16 lg:px-44 bg-gray-100">
             <h1 className="text-center text-3xl md:text-5xl font-bold mb-5" >
                 A Treasury of Islamic Knowledge
             </h1>

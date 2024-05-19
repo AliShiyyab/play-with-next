@@ -3,7 +3,7 @@ import {LogoAndPages} from "@/components/common/footer/logo-and-pages";
 
 export default function Footer() {
     return (
-        <footer className="bg-white text-gray-700 p-5">
+        <footer className="text-gray-700 p-5">
             <div className="flex flex-col mx-auto gap-4">
                 <LogoAndPages />
                 <div className={'flex item-center w-full'}>

@@ -1,22 +1,18 @@
+import {BookCard} from "@/components/common/card/book-card";
+
 export const TheFourChairs = () => {
     return (
-        <div className="p-5">
+        <div className="p-12 bg-gray-50">
             <div className={"flex justify-center gap-8"}>
                 <h1 className="text-center text-3xl md:text-4xl font-bold mb-5">The Four Chairs</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
                 {authors.map((author) => (
-                    <div key={author.name} className="min-w-lg flex flex-col items-center border-2 p-4 rounded-lg">
-                        <img
-                            src={author.image}
-                            alt={author.name}
-                            className="rounded-lg shadow-lg w-60 h-60"
-                        />
-                        <p className="mt-2 text-center">{author.name}</p>
-                    </div>
+                    <BookCard name={author.name} image={author.image} />
                 ))}
             </div>
-        </div>);
+        </div>
+    );
 }
 
 // should be from strapi

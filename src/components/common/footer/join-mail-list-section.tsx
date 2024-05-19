@@ -4,7 +4,7 @@ import {FaFacebook, FaInstagram, FaTwitter} from "react-icons/fa";
 export const JoinMailListSection = () => {
     return (
         <div className={'w-full flex item-start justify-between'}>
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-col md:flex-row justify-center">
                 <form className="flex items-center space-x-12">
                     <div className={"flex flex-row gap-2"}>
                         <input type="checkbox" className="accent-gray-700"/>

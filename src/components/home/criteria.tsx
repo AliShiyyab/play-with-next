@@ -1,3 +1,5 @@
+import {CalligraphyCard} from "@/components/common/card/calligraphy-card";
+
 export const Criteria = () => {
     // Api for first criteria contain the card content and the Criteria name. 
 
@@ -7,18 +9,8 @@ export const Criteria = () => {
                 <h1 className="text-center text-3xl md:text-4xl font-bold mb-5">{criteriaData.title}</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-                {criteriaData.data.map((author) => (
-                    <div key={author.name} className="max-w-2xl flex flex-col md:flex-row items-center border-2 p-4 rounded-lg gap-12">
-                        <img
-                            src={author.image}
-                            alt={author.name}
-                            className="rounded-lg shadow-lg w-60 h-60"
-                        />
-                        <div className={'flex flex-col gap-4'}>
-                            <p className="mt-2 text-start text-3xl">{author.name}</p>
-                            <p className="mt-2 text-start text-lg">{author.description}</p>
-                        </div>
-                    </div>
+                {criteriaData.data.map((criteria) => (
+                    <CalligraphyCard image={criteria.image} name={criteria.name} description={criteria.description} />
                 ))}
             </div>
         </div>

@@ -26,11 +26,12 @@ export const metadata: Metadata = {
         <html lang="en" className={"bg-white"} dir={params.lang !== "en" ? "rtl" : "ltr"}>
         <body className={inter.className}>
         <div className={"bg-white"}>
+            <div className={"bg-gradient-to-r from-gray-50"}>
             <NavigationBar lang={params.lang} locales={locales}/>
             <div className={'h-0.5 bg-red-900'} />
             {children}
-            <div className={'h-0.5 bg-red-900'} />
             <Footer />
+            </div>
         </div>
         </body>
         </html>
