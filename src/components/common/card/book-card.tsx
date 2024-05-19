@@ -6,7 +6,7 @@ interface IBookCard {
 
 export const BookCard = (data: IBookCard) => {
     return (
-        <div key={data.name} className="min-w-lg flex flex-col items-center border-2 p-4 rounded-lg gap-2">
+        <div key={data.name} className="min-w-lg flex flex-col items-center border-2 p-4 rounded-lg gap-2 bg-gray-50">
             <img
                 src={data.image}
                 alt={data.name}
